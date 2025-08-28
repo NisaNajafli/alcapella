@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --yasil : #13ACA9 ;
+    --narinci: #EB7452 ;
+    --qara: #222222;
+    --bg: #DED2C1;
+}
+header{
+    background-color: #FAEFE3;
+    height: 100%;
+}
+nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+nav > img{
+    width: 82px;
+    height: 60px;
+    object-fit: cover;
+}
+#navlocation{
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+#navlocation img{
+    width: 42px;
+    height: 42px;
+}
+#locationtexts p{
+    font: 500 14px Montserrat;
+    color: var(--qara)
+}
+#navcontact{
+    display: flex;
+    gap: 10px;
+    align-items:center
+}
+#navcontact p{
+    font: 500 14px Montserrat;
+    color: var(--qara);
+}
+#navcontact img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+#navphone{
+    display: flex;
+    gap: 20px;
+    align-items:center
+}
+#navphone-texts{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    gap: 4px;
+}
+#navphone-texts p{
+    display: flex;
+    gap: 8px;
+    align-items:center;
+    font: 12px Montserrat;
+    color: var(--qara)
+}
+#navphone-texts i{
+    color: #4DE52F;
+    font-size: 6px;
+}
+#navphone-texts a{
+    font: 700 22px Montserrat;
+    color: var(--qara);
+    text-decoration: none;
+}
+#navphone > a{
+    background: linear-gradient( #27C0BD , var(--yasil)  );
+    color: #fff;
+    font: 14px Montserrat;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 3%;
+}
+.hero__section-top{
+    height: 100%;
+    background: url(../img/1.png) center/cover
+}
+.hero__section-content{
+    padding-top: 30px;
+    display: flex;
+}
+.hero__section-imgs{
+    width: 50%;
+    position: relative;
+}
+.hero__section-imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+.herotexts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+}
+.herotexts p{
+    display: flex;
+    gap: 7px;
+    font: 16px Montserrat;
+    color: var(--narinci)
+}
+.herotexts i{
+    font-size: 18px;
+}
+.herotexts h1{
+    font: 50px Montserrat;
+    color: var(--qara);
+    text-transform: uppercase;
+}
+.herotexts h5{
+    font: 300 18px Montserrat;
+    width: 60%;
+}
+.herotexts a{
+    background: linear-gradient( #27C0BD , var(--yasil)  );
+    color: #fff;
+    font: 14px Montserrat;
+    text-transform: uppercase;
+    width: 60%;
+    height: 50px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 3%;
+}
+.hero__section-imgs div p{
+    background-color: #ffffffa4;
+    border: 1px solid #fff;
+    border-radius:4px;
+    padding: 20px 13px;
+    width: 60%;
+    font: 19px Montserrat;
+    color: var(--qara);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.hero__section-imgs div i{
+    font-size: 40px;
+    color: var(--yasil);
+    
+}
+.hero__section-imgs > div{
+    position: absolute;
+    top: 67%;
+    right: 24%;
+}
+.hero__section-bottom{
+    position: relative;
+}
+.hero__section-bottom img{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+}
+.hero__section-bottom-content{
+    position: relative;
+    z-index: 1;
+    background-color: #FAEFE3;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-radius: 4px
+}
+.hero__section-bottom-content > div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.hero__section-bottom-content p{
+    font: 300 15px Montserrat;
+    color: #222;
+    width: 80%;
+   
+}
+.hero__section-bottom-content h6{  
+    font: 15px Montserrat;
+    color: var(--narinci);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero__section-bottom-content i{
+    font-size: 25px;
+}
