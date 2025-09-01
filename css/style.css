@@ -595,7 +595,7 @@ span{
         }
         
         .hero__section-imgs {
-            width: 70%;
+            width: 80%;
         }
         .hero__section-imgs div p {
             width: 68%;
@@ -624,6 +624,53 @@ span{
         }
         .hero__section-bottom-content h6{
             font-size: 17px;
+        }
+        .products-top div, .products-bottom div{
+            justify-content: space-between;
+        }
+        .prices-cards{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .price-card{
+            width: 60%;
+        }
+        .prices__section-content h2{
+            text-align: center;
+        }
+        .faq__section-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .faq__section h2 {
+            width: 90%;
+            text-align: center;
+        }
+        .form-top img {
+            position: absolute;
+            top: -105%;
+            right: 0%;
+            width: 480px;
+            height: 378px;
+        }
+        .form form{
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-content{
+            align-items: center
+        }
+        .form-top{
+            width: 90%;
+        }
+        .form form div{
+            width: 90%;
+        }
+        .footer-content {
+            flex-direction: column;
+            gap: 20px;
         }
 
 }
@@ -682,9 +729,45 @@ span{
     .hero__section-imgs div p{
         font-size: 12px;
     }
+    .price-card h3 {
+    font: 17px Montserrat;
+    margin-top: -8px;
+}
+.price-top{
+        top: 0;
+    }
+    .price-card{
+        width: 32%;
+    }
+    .form-top img {
+    position: absolute;
+    top: -61%;
+    right: -62%;
+    width: 465px;
+    height: 344px;
+}
+.form-top{
+    width: 70%;
+}
+.form form div{
+    width: 33%;
+}
+.form form{
+    gap: 10px;
+}
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .hero__section-bottom img {
         top: -56%;
     }
+    .price-top{
+        top: 0;
+    }
+    .form-top img {
+            position: absolute;
+            top: -72%;
+            right: -100%;
+            width: 495px;
+            height: 392px;
+        }
 }
