@@ -362,3 +362,177 @@ footer hr{
     align-items: flex-end;
    gap: 10px;
 }
+.faq__section{
+    background-color: var(--bg);
+    padding: 100px 0;
+}
+.faq__section h2{
+    font:55px Montserrat;
+    width: 20%;
+}
+span{
+    color: var(--yasil)
+}
+.faqs{
+    width: 65%;
+}
+.faq__section-content{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-question p {
+    font: 600 18px Montserrat;
+    color: var(--yasil);
+    position: absolute;
+    right: 102% ;
+}
+.faq-question h4{
+    font: 600 15px Montserrat;
+    
+}
+.faq-question i{
+    color: var(--yasil);
+    position: absolute;
+    right: 0;
+}
+.faq-answer p{
+    font: 400 14px Montserrat;
+    width: 80%;
+    
+}
+.faq-question{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.faq.active .faq-answer{
+    max-height: 300px;
+}
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.1s ease;
+}
+.faq.active i{
+    transform: rotate(180deg);
+}
+.faq i{
+    transition:  transform .3s ease-in;
+}
+.faq.active .faq-question h4{
+    color: #EB7452;
+}
+.faq.active .faq-question p{
+    color: #EB7452
+}
+.price-card{
+    position: relative;
+    width: 30%;
+    height: 577px;
+    background-color:#FAEFE3;
+    padding: 80px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2%;
+    overflow: hidden;
+}
+.price-top{
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+
+.price-card h3{
+    font: 26px Montserrat;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: center;
+    /* padding-top: 60px; */
+}
+.prices__section{
+    background-color: var(--bg);
+    padding: 60px 0;
+}
+.prices__section-content h2{
+    font: 50px Montserrat;
+    margin-bottom: 30px
+}
+.price-card p{
+    font: 18px Montserrat;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.price-card i{
+    font-size: 22px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.price p{
+    font: 15px Montserrat;
+    color: #ae957b;
+    text-transform: uppercase;
+}
+.old-price{
+    font-size: 30px !important;
+    position: relative;
+    
+}
+.old-price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;             
+  background: #ae957b;         
+  transform: rotate(-20deg);
+  transform-origin: right top;
+}
+.new-price{
+    font: 50px Montserrat !important;
+    color: #EB7452 !important;
+}
+.price-card button{
+    height: 70px;
+    width: 80%;
+    background: linear-gradient( #27C0BD , #13ACA9) ;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius:2%;
+    font: 14px Montserrat
+}
+.prices-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.sale{
+    background-color: #FFF9ED;
+    border: 1px dotted var(--yasil);
+    border-radius:4%;
+    color: var(--yasil);
+    width: 80%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center
+}
+.sale p{
+    font-size: 12px;
+}
+.sale h5{
+    font-size: 20px;
+    font-weight: 700;
+}
