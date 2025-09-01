@@ -10,12 +10,24 @@ header, footer{
     background-color: #FAEFE3;
     height: 100%;
 }
+.offcanvas{
+    background-color: var(--ag);
+    
+}
 nav{
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    background-color: #FAEFE3;
+}
+nav.scrolled {
+    box-shadow: 10px -6px 15px black;
 }
 
 nav > img , footer > img{
@@ -23,29 +35,29 @@ nav > img , footer > img{
     height: 60px;
     object-fit: cover;
 }
-#navlocation , #footerlocation{
+.navlocation , #footerlocation{
     display: flex;
     gap: 10px;
     align-items: center
 }
-#navlocation img , #footerlocation img{
+.navlocation img , #footerlocation img{
     width: 42px;
     height: 42px;
 }
-#locationtexts p , #locationtextsftr p{
+.locationtexts p , #locationtextsftr p{
     font: 500 14px Montserrat;
     color: var(--qara)
 }
-#navcontact , #footercontact {
+.navcontact , #footercontact {
     display: flex;
     gap: 10px;
     align-items:center
 }
-#navcontact p , #footercontact p{
+.navcontact p , #footercontact p{
     font: 500 14px Montserrat;
     color: var(--qara);
 }
-#navcontact img , #footercontact img{
+.navcontact img , #footercontact img{
     width: 30px;
     height: 30px;
     object-fit: cover;
@@ -77,7 +89,7 @@ nav > img , footer > img{
     color: var(--qara);
     text-decoration: none;
 }
-#navphone > a , #footerphone > a{
+nav > a , #footerphone > a{
     background: linear-gradient( #27C0BD , var(--yasil)  );
     color: #fff;
     font: 14px Montserrat;
@@ -90,6 +102,9 @@ nav > img , footer > img{
     align-items:center;
     justify-content: center;
     border-radius: 3%;
+}
+nav > button{
+    display: none;
 }
 .hero__section-top{
     height: 100%;
@@ -535,4 +550,76 @@ span{
 .sale h5{
     font-size: 20px;
     font-weight: 700;
+}
+
+
+@media (max-width: 992px ){
+    .navlocation{
+        display: none;
+    }
+    .navcontact{
+        display: none;
+    }
+    #dropdown{
+        height: 40px; 
+        width: 49px; 
+        background-color: transparent; 
+        border: 2px solid var(--yasil); 
+        color: var(--yasil); 
+        border-radius: 6px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        cursor: pointer;
+    }
+        nav > img {
+        width: 90px;
+        height: 68px;
+    }
+
+}
+@media (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    nav > a{
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 1200px){
+    nav > a{
+    font: 11px Montserrat;
+    width: 150px;
+    }
+    .navlocation{
+        gap: 2px;
+    }
+    .locationtexts p{
+        font-size: 13px;
+    }
+    .navcontact{
+        gap: 5px;
+    }
+    
+    .navcontact p{
+        font-size: 13px;
+    }
+    #navphone{
+        gap: 7px;
+    }
+    #navphone-texts a{
+        font-size: 20px;
+    }
+    #navphone-texts p{
+        font-size: 11px;
+    }
+    nav > img{
+        width: 72px;
+        height: 52px;
+        }
 }

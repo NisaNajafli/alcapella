@@ -9,18 +9,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" style="background-color: #D48A5C;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navlocation">
+                <img src="img/Mask group (4).png" alt="">
+                <div class="locationtexts">
+                    <p>г. Москва, ул. Смольная, 35 с1</p>
+                    <p style="color: var(--yasil)">5 мин от метро Беломорская</p>
+                </div>
+            </div>
+            <div class="navcontact">
+                <p><span style="font-weight: 600;">Есть вопрос? </span> <br> Задайте онлайн</p>
+                <a href=""><img src="img/Frame 3.png" alt=""></a>
+                <a href=""><img src="img/Frame 4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav>
                 <img src="img/Logo_1 2.svg" alt="">
-                <div id="navlocation">
+                <div class="navlocation">
                     <img src="img/Mask group (4).png" alt="">
-                    <div id="locationtexts">
+                    <div class="locationtexts">
                         <p>г. Москва, ул. Смольная, 35 с1</p>
                         <p style="color: var(--yasil)">5 мин от метро Беломорская</p>
                     </div>
                 </div>
-                <div id="navcontact">
+                <div class="navcontact">
                     <p><span style="font-weight: 600;">Есть вопрос? </span> <br> Задайте онлайн</p>
                     <a href=""><img src="img/Frame 3.png" alt=""></a>
                     <a href=""><img src="img/Frame 4.png" alt=""></a>
@@ -30,8 +49,10 @@
                         <p><i class="fa-solid fa-circle"></i>  Работаем ежедневно 10:00 - 22:00</p>
                         <a href="">8 (958) 295-85-20</a>
                     </div>
-                    <a href="">обратный звонок</a>
+                    
                 </div>
+                <a href="">обратный звонок</a>
+                <button  data-bs-toggle="offcanvas" id="dropdown"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i  style="color: var(--yasil); font-size: 20px;" class="fa-solid fa-bars"></i></button>
             </nav>
         </div>
     </header>
