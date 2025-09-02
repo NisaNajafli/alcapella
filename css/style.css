@@ -267,7 +267,7 @@ nav > button{
 }
 .products-top h5 , .products-bottom h5{
     font: 30px Montserrat;
-    color: #fff;
+    color: var(--narinci);
     position: absolute;
     top: 10%;
     right: 10%;
@@ -297,6 +297,7 @@ nav > button{
 .contact__section{
     background-color: var(--bg);
     padding: 30px;
+    margin-top: -1px;
 }
 .contact-content{
     display: flex;
@@ -384,6 +385,7 @@ footer hr{
 .faq__section{
     background-color: var(--bg);
     padding: 100px 0;
+    margin-top: -1px;
 }
 .faq__section h2{
     font:55px Montserrat;
@@ -555,8 +557,18 @@ span{
     font-size: 20px;
     font-weight: 700;
 }
+.footermobile{
+    display: none;
+}
 
-
+#locationcontact{
+    display: flex;
+    gap: 100px;
+    align-items: center
+}
+.products__section{
+    margin-top: -1px;
+}
 @media (max-width: 992px ){
     .navlocation{
         display: none;
@@ -666,29 +678,98 @@ span{
             width: 90%;
         }
         .form form div{
-            width: 90%;
+            width: 100%;
         }
         .footer-content {
             flex-direction: column;
             gap: 20px;
+        }
+        #locationcontact{
+            gap: 12px;
+            flex-direction: column;
+        }
+        .form form div{
+            height: 56px;
         }
 
 }
 @media (max-width: 768px){
     nav{
         flex-wrap: wrap;
+        row-gap: 14px;
     }
     .footer-content{
         flex-direction: column;
     }
     nav > a{
         width: 80%;
+        height: 59px;
+    }
+    .hero__section-top{
+        padding-top: 188px;
+    }
+    .herotexts h1{
+        font-size: 42px;
+    }
+    .herotexts a {
+        font: 13px Montserrat;
+        width: 80%;
+        height: 61px;
+    }
+    .hero__section-imgs {
+        width: 95%;
+    }
+    .products-top, .products-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .products-top div, .products-bottom div{
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
         
+    }
+    .products-top h5, .products-bottom h5{
+        top: 2%;
+        right: 2%;
+    }
+    .products-top p, .products-bottom p{
+        width: 70%;
+    }
+    .products__section h2{
+        text-align: center;
+    }
+    .products-img{
+        width: 90%;
+        margin: auto;
+    }
+    .price-card {
+        width: 85%;
+    }
+    .price-top{
+        top: -22%;
+    }
+    .faqs{
+        width: 90%;
+        margin: auto;
+    }
+    .form-top h2{
+        text-align: center;
+        font-size: 42px;
+    }
+    .form-top img {
+        position: absolute;
+        top: -112%;
+        right: -20%;
+        width: 444px;
+        height: 357px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-    nav > a{
+    nav > a , #footerphone > a{
     font: 11px Montserrat;
     width: 150px;
     }
@@ -755,6 +836,14 @@ span{
 .form form{
     gap: 10px;
 }
+.footer-content{
+    flex-direction: column;
+    gap: 10px;
+}
+#locationcontact{
+    gap: 12px;
+    flex-direction: column;
+}
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .hero__section-bottom img {
@@ -770,4 +859,19 @@ span{
             width: 495px;
             height: 392px;
         }
+        #locationcontact{
+            gap: 50px
+        }
+}
+@media (max-width: 555px){
+    .form-top h2{
+        font-size: 30px;
+    }
+    .form-top img {
+        position: absolute;
+        top: -119%;
+        right: -41%;
+        width: 400px;
+        height: 318px;
+    }
 }
